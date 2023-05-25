@@ -77,3 +77,62 @@ function rightInvertedPyramid(rows) {
 }
 rightInvertedPyramid(5);
 
+
+                            6.Second Smallest element and Second Highest element in given array
+							
+let array= [9,10,23,1,6,4,8,20];
+console.log("second Smallest element is :", array.sort()[1]);
+console.log("Second Highest element is :",array.sort()[array.length-2]);
+
+
+                            7.Star Pattern
+
+function StarPyramid(rows) {
+  for (var i = 1; i <= rows; i++) {
+    var pattern = '';
+    for (var j = 1; j <= i; j++) {
+      pattern += '* ';
+    }
+    console.log(pattern);
+  }
+}
+var rows = 5;
+StarPyramid(rows);
+
+                          8.Number Triangle Pattern
+
+let n = 5; 
+let char = "";
+let count = 1;
+for (let i = 1; i <= n; i++) {
+  for (let j = 1; j <= i; j++) {
+    char += count;
+    count++;
+  }
+  char += "\n";		
+
+                        9.Number Pattern 
+
+function numberPattern(rows) {
+  for (let i = 1; i <= rows; i++) {
+    let row = '';
+    for (let j = 1; j <= i; j++) {
+      row += (j % 2 === 0) ? '1 ' : '0 ';
+    }
+    console.log(row);
+  }
+}
+
+numberPattern(5);	
+
+                      10.Remove duplicates from the given array
+
+function removeDuplicatesFromArray(arr) {
+  return Array.from(new Set(arr));
+}
+
+const array = [1, 2, 2, 3, 4, 4, 5];
+const result = removeDuplicatesFromArray(array);
+console.log(result);
+				   
+
