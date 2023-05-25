@@ -1,0 +1,79 @@
+                          1.Create inverted triangle using javascript
+
+function invertedTriangle(height) {
+  for (let i = height; i > 0; i--) {
+    let row = "";
+    for (let j = 0; j < i; j++) {
+      row += "*";
+    }
+    console.log(row);
+  }
+}
+invertedTriangle(5);
+
+                               2.Rectangular pattern
+
+
+function rectangle(width, height) {
+  for (let i = 0; i < height; i++) {
+    let row = '';
+    for (let j = 0; j < width; j++) {
+      row += '* ';
+    }
+    console.log(row);
+  }
+}
+rectangle(5, 5);
+
+
+                               3.Right Angled Pyramid
+
+
+function rightAngledPyramid(height) {
+  for (let i = 1; i <= height; i++) {
+    let row = '';
+    
+    for (let j = 1; j <= height - i; j++) {
+      row += ' ';
+    }
+    for (let k = 1; k <= i; k++) {
+      row += '*';
+    }
+    
+    console.log(row);
+  }
+}
+rightAngledPyramid(5);
+
+
+                            4.Right Angled Triangle
+
+function rightTriangle(height) {
+  for (let i = 1; i <= height; i++) {
+    let row = '';
+    for (let j = 1; j <= i; j++) {
+      row += '*';
+    }
+    console.log(row);
+  }
+}
+rightTriangle(5);
+
+                               5.Right Inverted Pyramid
+
+function rightInvertedPyramid(rows) {
+  for (let i = rows; i >= 1; i--) {
+    let pattern = '';
+    for (let j = 1; j <= rows - i; j++) {
+      pattern += ' ';
+    }
+    
+    for (let k = 1; k <= i; k++) {
+      pattern += '*';
+    }
+    
+    console.log(pattern);
+  }
+}
+rightInvertedPyramid(5);
+
